@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./add-empleados.component.css']
 })
 export class AddEmpleadosComponent implements OnInit {
+  title = 'Gestione su almacén';
 
   empleado = {
     nombres: '',
