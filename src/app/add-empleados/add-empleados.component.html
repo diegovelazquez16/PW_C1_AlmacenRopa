@@ -49,10 +49,15 @@
         <ng-container *ngIf="modalAction === 'get'">
           <h3>Lista de empleados</h3>
           <ul>
-            <li *ngFor="let emp of empleados">{{ emp.nombres }} {{ emp.apellidos }} - {{ emp.salario }}</li>
+            <li *ngFor="let emp of empleados">
+              <strong>Nombre (s):</strong> {{ emp.nombres}} <br>
+              <strong>Apellidos:</strong> {{ emp.apellidos}} <br>
+              <strong>Direccion::</strong> {{ emp.direccion}} <br>
+              <strong>Salario:</strong> {{ emp.salario}} <br>
+            </li>
           </ul>
         </ng-container>
-  
+
         <ng-container *ngIf="modalAction === 'update'">
           <h3>Actualizar empleado</h3>
           <label for="updateId">ID de empleado</label>
