@@ -48,6 +48,7 @@
             <h3>Lista de proveedores</h3>
             <ul>
               <li *ngFor="let prov of proveedores">
+                <strong>ID:</strong> {{ prov.id_proveedor }}<br>
                 <strong>Nombre:</strong> {{ prov.nombres}} <br>
                 <strong>Dirección:</strong> {{ prov.direccion }} <br>
                 <strong>Teléfono:</strong> {{ prov.telefono }} <br>

@@ -48,7 +48,6 @@
       <button (click)="openModal('delete')">Eliminar prenda</button>
     </div>
   
-    <!-- Modal -->
     <div *ngIf="isModalOpen" class="modal">
       <div class="modal-content">
         <span class="close" (click)="closeModal()">&times;</span>
@@ -56,8 +55,12 @@
         <ng-container *ngIf="modalAction === 'get'">
           <h3>Lista de prendas</h3>
           <ul>
-            <li *ngFor="let prenda of prendas">{{ prenda.nombre }} - {{ prenda.precio }} €</li>
+            <li *ngFor="let prenda of prendas">
+              <strong>ID:</strong> {{ prenda.id_prenda }}<br>
+              <strong>Precio:</strong> {{ prenda.precio}} <br>
+            </li>
           </ul>
+
         </ng-container>
   
         <ng-container *ngIf="modalAction === 'update'">

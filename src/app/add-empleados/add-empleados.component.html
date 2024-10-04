@@ -50,6 +50,7 @@
           <h3>Lista de empleados</h3>
           <ul>
             <li *ngFor="let emp of empleados">
+              <strong>ID:</strong> {{ emp.id_empleado }}<br>
               <strong>Nombre (s):</strong> {{ emp.nombres}} <br>
               <strong>Apellidos:</strong> {{ emp.apellidos}} <br>
               <strong>Direccion::</strong> {{ emp.direccion}} <br>
